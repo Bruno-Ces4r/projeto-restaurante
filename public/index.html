@@ -11,23 +11,38 @@
       href="../favicon_io/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <li><a href="#">Home</a></li>
+      <nav class="navbar">
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="#">Cardápio</a></li>
+        <li class="items"><a href="./login.html">Log in</a></li>
+        <li class="items"><a href="#">Cadastro</a></li>
+        <li class="items"><a href="#">Reservas</a></li>
       </nav>
     </header>
     <main class="main">
-      <h1>Projeto Restaurante</h1>
-      <h2>
-        Link De Tela:
-        <a
-          href="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/"
-          target="_blank"
-          >Site do Restaurante</a
-        >
-      </h2>
+      <div class="food">
+        <div>
+          <img
+            class="alimento"
+            src="https://bolichelitoralplaza.com.br/wp-content/uploads/2017/01/pizza.jpg"
+            alt="Pizza"
+          />
+        </div>
+        <div class="produtos">
+          <div class="produto1">
+            <p class="preco1">R$40,00</p>
+            <p class="pizza"><b>Pizza</b></p>
+          </div>
+          <div class="produto2">
+            <p class="preco2">R$10,00</p>
+            <p class="pizza"><b>Coca-Cola(garrafa)</b></p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
