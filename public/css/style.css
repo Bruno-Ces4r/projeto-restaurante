@@ -6,4 +6,6 @@
 
 body {
   background-color: rgb(239, 238, 238);
+  max-width: 1400px;
+  padding: 0 20px;
 }
