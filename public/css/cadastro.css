@@ -36,9 +36,8 @@
   border-radius: 50%;
 }
 
-.cadeado {
+.newUser {
   width: 100%;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
 }
