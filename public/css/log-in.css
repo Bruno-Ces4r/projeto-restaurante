@@ -68,6 +68,10 @@
   border: 1px solid gray;
 }
 
+.campos:focus {
+  outline: none;
+}
+
 .forgot-password {
   margin-bottom: 10px;
 }
@@ -89,6 +93,13 @@
 
 .logar:hover {
   cursor: pointer;
+  background-color: #288665;
+  border-color: #288665;
+}
+
+.logar:focus {
+  background-color: #38b88b;
+  border-color: #38b88b;
 }
 
 .create-account {

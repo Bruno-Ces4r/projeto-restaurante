@@ -17,7 +17,11 @@
     <main class="content">
       <p class="voltar">
         <a href="./index.html">
-          <img src="../image/arrow-left-bold.png" class="arrow-left" />
+          <img
+            src="../image/arrow-left-bold.png"
+            class="arrow-left"
+            draggable="false"
+          />
           <a href="./index.html">Voltar</a>
         </a>
       </p>
@@ -27,7 +31,8 @@
             <img
               class="cadeado"
               src="../image/male-person.svg"
-              alt="Cadeado-Login"
+              alt="Person"
+              draggable="false"
             />
           </div>
         </div>
@@ -38,10 +43,10 @@
           <form action="" class="formulario">
             <div class="controle-input">
               <input
-                type="text"
-                name="user"
-                id="user"
-                placeholder="Usuário"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
                 class="campos"
               />
             </div>
@@ -56,7 +61,7 @@
             </div>
             <div class="controle-input">
               <p class="forgot-password">
-                <a href="./login.html">Esqueceu sua senha?</a>
+                <a href="./forgot-password.html">Esqueceu sua senha?</a>
                 <!--Redirecionar para alterar senha-->
               </p>
               <!--Esconder campo e mostrar caso o usuário erre a senha-->
