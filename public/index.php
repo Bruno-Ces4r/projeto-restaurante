@@ -20,7 +20,7 @@
         <li class="items"><a href="#">Cardápio</a></li>
         <li class="items"><a href="#">Reservas</a></li>
         <li class="items"><a href="#">Favoritos</a></li>
-        <li class="items"><a href="./login.html">Log in</a></li>
+        <li class="items"><a href="./login.php">Log in</a></li>
       </nav>
     </header>
     <main class="main">
