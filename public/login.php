@@ -16,13 +16,13 @@
   <body>
     <main class="content">
       <p class="voltar">
-        <a href="./index.html">
+        <a href="./index.php">
           <img
             src="../image/arrow-left-bold.png"
             class="arrow-left"
             draggable="false"
           />
-          <a href="./index.html">Voltar</a>
+          <a href="./index.php">Voltar</a>
         </a>
       </p>
       <div>
@@ -61,13 +61,13 @@
             </div>
             <div class="controle-input">
               <p class="forgot-password">
-                <a href="./forgot-password.html">Esqueceu sua senha?</a>
+                <a href="./forgot-password.php">Esqueceu sua senha?</a>
                 <!--Redirecionar para alterar senha-->
               </p>
               <!--Esconder campo e mostrar caso o usuário erre a senha-->
               <button type="submit" class="logar">Log In</button>
               <p class="create-account">
-                <a href="./cadastro.html">Criar conta</a>
+                <a href="./cadastro.php">Criar conta</a>
                 <!--Redirecionar para cadastro-->
               </p>
             </div>
