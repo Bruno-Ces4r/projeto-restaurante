@@ -40,7 +40,7 @@
         <div class="form-control">
           <h1 class="boas-vindas">Crie sua conta e utilize gratuitamente</h1>
 
-          <form action="" class="formulario">
+          <form action="./../src/action/insert-cadastro.php" method="POST" class="formulario">
             <div class="controle-input">
               <input
                 type="text"
