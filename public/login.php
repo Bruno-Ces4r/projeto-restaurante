@@ -40,7 +40,7 @@
         <div class="form-control">
           <h1 class="boas-vindas">Olá!Seja bem vindo novamente.</h1>
 
-          <form action="" class="formulario">
+          <form action="./../src/action/login.php" class="formulario" method='POST'>
             <div class="controle-input">
               <input
                 type="email"

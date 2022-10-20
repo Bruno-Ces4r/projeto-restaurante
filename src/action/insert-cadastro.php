@@ -12,9 +12,11 @@
 
         $dia_inclusao = date("Y-m-d H:i:s");
 
+        $role = 'user';
+
     }
 
-    $sql = "INSERT INTO tb_users(nome,email,senha,dia_inclusao) values('$fullName', '$mail', '$password', '$dia_inclusao')";
+    $sql = "INSERT INTO tb_users(nome,email,senha,dia_inclusao, role) values('$fullName', '$mail', '$password', '$dia_inclusao', '$role')";
     
     $query = $db->query( $sql );
     if(!$query){

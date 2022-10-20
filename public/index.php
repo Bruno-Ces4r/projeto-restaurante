@@ -1,3 +1,13 @@
+<?php 
+  session_start();
+
+  if(!($_SESSION['mail'])){
+    header('Location:./login.php');
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,13 +25,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <li class="items"><a href="#">Home</a></li>
-        <li class="items"><a href="#">Cardápio</a></li>
-        <li class="items"><a href="#">Reservas</a></li>
-        <li class="items"><a href="#">Favoritos</a></li>
-        <li class="items"><a href="./login.php">Log in</a></li>
-      </nav>
+      <?php 
+      include_once("./components/navbar/verificado-navbar.php"); 
+      ?>
     </header>
     <main class="main">
       <div class="food">
