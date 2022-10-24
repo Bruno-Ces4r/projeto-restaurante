@@ -9,7 +9,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,35 +23,74 @@
       href="../favicon_io/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/home.css" />
+
+    <link rel="stylesheet" href="./css/cardapio.css" />
   </head>
   <body>
-    <header>
+  <header>
       <?php 
         $initialNavbar ? include_once("./components/navbar/inital-navbar.php") : include_once("./components/navbar/verificado-navbar.php"); 
       ?>
-    </header>
-    <main class="main">
-      <div class="food">
-        <div>
-          <img
-            class="alimento"
-            src="https://bolichelitoralplaza.com.br/wp-content/uploads/2017/01/pizza.jpg"
-            alt="Pizza"
-            draggable="false"
-          />
-        </div>
-        <div class="produtos">
-          <div class="produto1">
-            <p class="preco1">R$40,00</p>
-            <p class="pizza"><b>Pizza</b></p>
-          </div>
-          <div class="produto2">
-            <p class="preco2">R$10,00</p>
-            <p class="pizza"><b>Coca-Cola(garrafa)</b></p>
-          </div>
-        </div>
-      </div>
-    </main>
+  </header>
+    <table class="tabela">
+        <tr>
+            <td>
+                <img src="../image/pizza-de-frango-com-catupiry.jpg" class="xburguer" alt="">
+            </td>
+            <td class="texto">
+                <b>Frango com catupiry</b><br>Molho de tomate, mussarela, frango desfiado e catupiry<br><br><b>R$25,00</b>
+            </td>
+            <td>
+              <img src="../image/pizza-de-calabresa-.jpeg" class="xburguer" alt="">
+          </td>
+          <td class="texto">
+              <b>Calabresa</b><br>Molho de tomate, mussarela e calabresa<br><br><b>R$28,00</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <img src="../image/pizza peperoni.jpg" class="xburguer" alt="">
+          </td>
+          <td class="texto">
+              <b>Peperoni</b><br>Mussarela e peperoni<br><br><b>R$40,00</b>
+          </td>
+          <td class="imagem">
+            <img src="../image/pizza marguerita.jpg" class="xburguer" alt="">
+        </td>
+        <td class="texto">
+            <b>Marguerita</b><br>Mussarela, molho de tomate e manjericão<br><br><b>R$40,00</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <img src="../image/pizza.png" class="xburguer" alt="">
+        </td>
+        <td class="texto">
+            <b>Mussarela</b><br>Molho de tomate e mussarela<br><br><b>R$40,00</b>
+        </td>
+        <td>
+          <img src="../image/pizza lombo.jpg" class="xburguer" alt="">
+      </td>
+      <td class="texto">
+          <b>Lombo</b><br>Molho de tomate, mussarela e lombo<br><br><b>R$4,00</b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          <img src="../image/pizza chocolate.jpg" class="xburguer" alt="">
+      </td>
+      <td class="texto">
+          <b>Chocolate</b><br>Mussarela e chocolate derretido.<br><br><b>R$40,00</b>
+      </td>
+      <td>
+        <img src="../image/pizza chocolate com morango.jpg" class="xburguer" alt="">
+    </td>
+    <td class="texto">
+        <b>Chocolate com morango</b><br>Mussarela, chocolate derretido e morango<br><br><b>R$45,00</b>
+    </td>
+  </tr>
+    </table>
+    <br><br>
+    <p class="bebidas"><u>Bebidas</u></p>
   </body>
 </html>
