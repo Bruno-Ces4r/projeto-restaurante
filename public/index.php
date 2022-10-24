@@ -38,13 +38,13 @@
                 <img src="../image/pizza-de-frango-com-catupiry.jpg" class="xburguer" alt="">
             </td>
             <td class="texto">
-                <b>Frango com catupiry</b><br>Molho de tomate, mussarela, frango desfiado e catupiry<br><br><b>R$25,00</b>
+                <b>Frango com catupiry</b><br>Molho de tomate, mussarela, frango desfiado e catupiry<br><br><b>R$40,00</b>
             </td>
             <td>
               <img src="../image/pizza-de-calabresa-.jpeg" class="xburguer" alt="">
           </td>
           <td class="texto">
-              <b>Calabresa</b><br>Molho de tomate, mussarela e calabresa<br><br><b>R$28,00</b>
+              <b>Calabresa</b><br>Molho de tomate, mussarela e calabresa<br><br><b>R$40,00</b>
           </td>
         </tr>
         <tr>
@@ -72,7 +72,7 @@
           <img src="../image/pizza lombo.jpg" class="xburguer" alt="">
       </td>
       <td class="texto">
-          <b>Lombo</b><br>Molho de tomate, mussarela e lombo<br><br><b>R$4,00</b>
+          <b>Lombo</b><br>Molho de tomate, mussarela e lombo<br><br><b>R$40,00</b>
       </td>
     </tr>
     <tr>
@@ -90,7 +90,5 @@
     </td>
   </tr>
     </table>
-    <br><br>
-    <p class="bebidas"><u>Bebidas</u></p>
   </body>
 </html>
