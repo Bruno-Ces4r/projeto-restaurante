@@ -1,3 +1,15 @@
+<?php 
+  session_start();
+
+  if(!($_SESSION['mail'])){
+    $initialNavbar = true;
+  }else{
+    $initialNavbar = false;
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza à Bessa</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./components/navbar/verificado-navbar.css">
     <link
       rel="shortcut icon"
       href="../favicon_io/favicon.ico"
@@ -15,13 +28,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <li class="items"><a href="#">Home</a></li>
-        <li class="items"><a href="#">Cardápio</a></li>
-        <li class="items"><a href="#">Reservas</a></li>
-        <li class="items"><a href="#">Favoritos</a></li>
-        <li class="items"><a href="./login.php">Log in</a></li>
-      </nav>
+      <?php 
+        $initialNavbar ? include_once("./components/navbar/inital-navbar.php") : include_once("./components/navbar/verificado-navbar.php"); 
+      ?>
     </header>
     <main class="main">
       <div class="food">
