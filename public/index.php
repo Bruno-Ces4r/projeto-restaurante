@@ -2,7 +2,9 @@
   session_start();
 
   if(!($_SESSION['mail'])){
-    header('Location:./login.php');
+    $initialNavbar = true;
+  }else{
+    $initialNavbar = false;
   }
 
 ?>
@@ -16,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza à Bessa</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./components/navbar/verificado-navbar.css">
     <link
       rel="shortcut icon"
       href="../favicon_io/favicon.ico"
@@ -26,7 +29,7 @@
   <body>
     <header>
       <?php 
-      include_once("./components/navbar/verificado-navbar.php"); 
+        $initialNavbar ? include_once("./components/navbar/inital-navbar.php") : include_once("./components/navbar/verificado-navbar.php"); 
       ?>
     </header>
     <main class="main">
