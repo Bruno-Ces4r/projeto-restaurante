@@ -11,7 +11,7 @@
       href="../favicon_io/favicon.ico"
       type="image/x-icon"
     />
-    <title>Pizza à Bessa</title>
+    <title>Pizza BG</title>
   </head>
   <body>
     <main class="content">
@@ -41,22 +41,9 @@
         <div class="form-control">
           <h1 class="boas-vindas">Recuperação de Senha</h1>
 
-          <form action="" class="formulario">
-            <div class="controle-input">
-              <input
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="Email"
-                class="campos"
-              />
-            </div>
-            <div class="controle-input">
-              <!--Esconder campo e mostrar caso o usuário erre a senha-->
-              <button type="submit" class="recuperar">Confirmar</button>
-            </div>
+          <p class='contact'>Entre em Contato com o e-mail <b>zequinhaDoSuporte@gmail.com</b></p>
             <p class="warning">
-              Ao clicar no botão acima, enviaremos um e-mail com as isntruções
+              Ao entrar em contato,enviaremos um e-mail com as isntruções
               para redefinir a senha
             </p>
           </form>

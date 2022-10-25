@@ -90,3 +90,9 @@
   background-color: #38b88b;
   border-color: #38b88b;
 }
+
+.error{
+  margin-top: 20px;
+  color: red;
+  text-align: center;
+}

@@ -20,15 +20,13 @@
         
 
         if ($countMail <= 0){
-            header('Location: '.$_SERVER['HTTP_REFERER']);
-            // Toast de email inválido
+            header('Location: ./../../public/login.php?signup=mail');
         }else if ($countMail > 0){
             $foundPassword = 'SELECT * FROM tb_users where email = "'.$mail.'" AND senha = "'.$password.'"';
             $executePassword = $db ->query( $foundPassword );
             $countPassword = $executePassword->rowcount();
             if($countPassword <= 0){
-                header('Location: '.$_SERVER['HTTP_REFERER']);
-                // Toast de senha inválida
+                header('Location: ./../../public/login.php?signup=password');
             }else{
                 $_SESSION['mail'] = $registros[0][2];
                 $_SESSION['role'] = $registros[0][6];
@@ -41,7 +39,7 @@
             }
         }
     }catch(_){
-        // Colocar um toast de erro de processamento!
+        header('Location: ./../../public/login.php?signup=process');
     }
 
 

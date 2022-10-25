@@ -11,7 +11,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/log-in.css" />
-    <title>Pizza à Bessa</title>
+    <title>Pizza BG</title>
   </head>
   <body>
     <main class="content">
@@ -66,12 +66,27 @@
               </p>
               <!--Esconder campo e mostrar caso o usuário erre a senha-->
               <button type="submit" class="logar">Log In</button>
-              <p class="create-account">
+              <!-- <p class="create-account">
                 <a href="./cadastro.php">Criar conta</a>
-                <!--Redirecionar para cadastro-->
-              </p>
+              </p> -->
             </div>
           </form>
+          <?php
+            if(!isset($_GET['signup'])){
+              exit();
+            }else{
+              $signupCheck = $_GET['signup'];
+
+              if($signupCheck == 'password'){
+                echo '<p class="error">Informe uma senha válida!</p>';
+                exit();
+              }elseif ($signupCheck == 'mail'){
+                echo '<p class="error">Informe um e-mail válido!</p>';
+              }elseif ($signupCheck == 'process'){
+                echo '<p class="error">Infelizmente ocorreu um erro de processamento na aplicação!</p>';
+              }
+            }
+          ?>
         </div>
       </div>
     </main>

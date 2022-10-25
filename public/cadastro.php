@@ -11,7 +11,7 @@
       href="../favicon_io/favicon.ico"
       type="image/x-icon"
     />
-    <title>Pizza à Bessa</title>
+    <title>Pizza BG</title>
   </head>
   <body>
     <main class="content">
@@ -82,6 +82,20 @@
               <button type="submit" class="logar">Criar Conta</button>
             </div>
           </form>
+          <?php 
+            if(!isset($_GET['register'])){
+              exit();
+            }else{
+              $register = $_GET['register'];
+              
+              if($register == 'mail'){
+                echo '<p class="error">E-mail já cadastro no sistema,informe outro!</p';
+                exit();
+              }elseif($register == 'process'){
+                echo '<p class="error">Infelizmente ocorreu um erro de processamento!</p';
+              }
+            }
+          ?>
         </div>
       </div>
     </main>

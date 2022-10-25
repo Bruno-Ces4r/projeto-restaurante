@@ -25,14 +25,16 @@
     
                 $query= $db->query( $insertUser );
             if(!$query){
-                die("Eroo ao Carregar");
+                header('Location: ./../../public/cadastro.php?register=process');
             }else{
-                header('Location:'.$_SERVER('Location: ./../../../public/login.php'));
+                header('Location:./../../public/login.php');
             }
         }else{
-            //Toast Email Inválido
+            header('Location: ./../../public/cadastro.php?register=mail');
         }
-    }catch(_){}
+    }catch(_){
+        header('Location: ./../../public/cadastro.php?register=process');
+    }
 
     }
 ?>

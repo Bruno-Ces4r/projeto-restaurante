@@ -1,10 +1,10 @@
 <?php 
   session_start();
 
-  if(!($_SESSION['mail'])){
-    $initialNavbar = true;
-  }else{
+  if(isset($_SESSION['mail']) && $_SESSION['mail'] !== 'false'){
     $initialNavbar = false;
+  }else{
+    $initialNavbar = true;
   }
 
 ?>
@@ -15,7 +15,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza à Bessa</title>
+    <title>Pizza BG</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./components/navbar/verificado-navbar.css">
     <link
@@ -29,9 +29,10 @@
   <body>
   <header>
       <?php 
-        $initialNavbar ? include_once("./components/navbar/inital-navbar.php") : include_once("./components/navbar/verificado-navbar.php"); 
+        $initialNavbar ? include_once("./components/navbar/initial-navbar.php") : include_once("./components/navbar/verificado-navbar.php"); 
       ?>
   </header>
+    <h1 class='title'>Confira nosso cardápio abaixo e venha apreciar!</h1>
     <table class="tabela">
         <tr>
             <td>
