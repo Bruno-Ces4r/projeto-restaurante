@@ -14,15 +14,25 @@
 
         $role = 'user';
 
-    }
+        try{
 
-    $sql = "INSERT INTO tb_users(nome,email,senha,dia_inclusao, role) values('$fullName', '$mail', '$password', '$dia_inclusao', '$role')";
+            $foundMail = 'SELECT * FROM tb_users where email = "'.$mail.'"';
+            $executeMail = $db->query( $foundMail );
+            $countMail = $executeMail->rowCount();
+            
+            if($countMail <= 0){
+                $insertUser = "INSERT INTO tb_users(nome,email,senha,dia_inclusao,user_type) values('$fullName', '$mail', '$password', '$dia_inclusao', '$role')";
     
-    $query = $db->query( $sql );
-    if(!$query){
-        die("Erro ao Carregar");
-    }else{
-        header('Location: '.$_SERVER['HTTP_REFERER']);
-    }
+                $query= $db->query( $insertUser );
+            if(!$query){
+                die("Eroo ao Carregar");
+            }else{
+                header('Location:'.$_SERVER('Location: ./../../../public/index.php'));
+            }
+        }else{
+            //Toast Email Inválido
+        }
+    }catch(_){}
 
+    }
 ?>
