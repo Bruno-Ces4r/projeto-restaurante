@@ -27,7 +27,7 @@
             if(!$query){
                 die("Eroo ao Carregar");
             }else{
-                header('Location:'.$_SERVER('Location: ./../../../public/index.php'));
+                header('Location:'.$_SERVER('Location: ./../../../public/login.php'));
             }
         }else{
             //Toast Email Inválido
