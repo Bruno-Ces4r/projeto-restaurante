@@ -9,12 +9,12 @@
 
     <div class="navega">
         <a href="./index.php">Cardápio</a>
-        <a href="./admins.php">Reserva</a>
+        <a href="./reserva.php">Reserva</a>
         <a href="./painel.php">Minhas Reservas</a>
 
         
         <div class="dropdown">
-        <button class="dropbtn"><?php echo($_SESSION['nome']); ?></button>
+        <img src="./../image/logout.png" class="logout" alt="logout">
             <div class="dropdown-content">
                 <a href='./../src/action/abort-session.php'>Sair</a>
             </div>

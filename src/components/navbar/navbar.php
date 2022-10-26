@@ -5,9 +5,9 @@
     </div>
     <div class="navega">
         <div class="dropdown">
-            <button class="dropbtn"><?php echo $_SESSION['nome']; ?></button>
+            <img src="./../image/logout.png" class="logout" alt="logout">
             <div class="dropdown-content">
-                <a href='./../action/abort-session.php'>Sair</a>
+                <a href='./../src/action/abort-session.php'>Sair</a>
             </div>
         </div>
     </div>

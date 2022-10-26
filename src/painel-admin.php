@@ -7,13 +7,6 @@ if($_SESSION['mail'] !== "super@root.com" || $_SESSION['role'] !== 'admin'){
 }
 
 require_once("./action/conexao.php");
-$db = conecta();
-
-$sql = "SELECT * FROM tb_products";
-
-$query = $db->query( $sql );
-
-$registros = $query->fetchall();
 ?>
 
 
@@ -31,11 +24,31 @@ $registros = $query->fetchall();
     <link rel="stylesheet" href="./components/navbar/navbar.css">
 
     <link rel="shortcut icon" href="./../favicon_io/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <?php include_once('./components/navbar/navbar.php'); ?>
 
-    <h1>Incluir painel com as reservas</h1>
+    <h1 class="title">Gráficos de Controle</h1>
+
+    <div class="controle">
+        <div class="admin">
+            <h2 class="titulos-graficos">Gerenciamento de Mesas</h2>
+            <canvas id="myChart" ></canvas>
+        </div>
+
+        <div class="mensal">
+            <h2 class="titulos-graficos">Novos usuários mensais</h2>
+            <canvas id="mensalChart"></canvas>
+        </div>
+    </div>
+
+
+    <?php require_once("./js/mesas-graphic.php"); ?>
+    
+    <?php require_once("./js/mensal-user.php"); ?>
+
+
     
 </body>
 </html>

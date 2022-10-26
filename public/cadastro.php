@@ -16,13 +16,13 @@
   <body>
     <main class="content">
       <p class="voltar">
-        <a href="./login.php">
+        <a href="./index.php">
           <img
             src="../image/arrow-left-bold.png"
             class="arrow-left"
             draggable="false"
           />
-          <a href="./login.php">Voltar</a>
+          <a href="./index.php">Voltar</a>
         </a>
       </p>
       <div>
