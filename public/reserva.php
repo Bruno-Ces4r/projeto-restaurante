@@ -4,7 +4,7 @@
   if(isset($_SESSION['mail']) && $_SESSION['mail'] !== 'false'){
     $initialNavbar = false;
   }else{
-    $initialNavbar = true;
+    header('Location: ./index.php');
   }
 
 ?>
@@ -59,7 +59,7 @@
   <body>
   <header>
       <?php 
-        $initialNavbar ? include_once("./components/navbar/initial-navbar.php") : include_once("./components/navbar/verificado-navbar.php"); 
+          include_once("./components/navbar/verificado-navbar.php"); 
       ?>
   </header>
     <main class="content">
@@ -86,7 +86,7 @@
                 <select name="hora" class="campos">
                   <option value="18:00:00">18:00 - 22:00</option>
                 </select>
-              </div>
+            </div>
               <p class="warning">
                   *No momento,estamos atendendo somente no horário acima!
               </p>
