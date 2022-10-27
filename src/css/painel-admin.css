@@ -20,6 +20,10 @@
     justify-content: space-around;
 }
 
+.adjuste-admin{
+    max-width: 350px;
+}
+
 .admin{
     text-align: center;
     max-width: 350px;
@@ -31,7 +35,38 @@
     width: 600px;
 }
 
+.adjuste-mensal{
+    max-width: 600px;
+}
+
 
 .titulos-graficos{
     padding-bottom: 10px;
+}
+
+
+@media (max-width: 1000px){
+    .controle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .admin{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .mensal{
+        margin-top: 50px;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
