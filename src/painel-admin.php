@@ -33,14 +33,20 @@ require_once("./action/conexao.php");
 
     <div class="controle">
         <div class="admin">
-            <h2 class="titulos-graficos">Gerenciamento de Mesas</h2>
-            <canvas id="myChart" ></canvas>
+            <div class='adjuste-admin'>
+                <h2 class="titulos-graficos">Gerenciamento de Mesas</h2>
+                <canvas id="myChart" ></canvas>
+            </div>
         </div>
 
         <div class="mensal">
-            <h2 class="titulos-graficos">Novos usuários mensais</h2>
-            <canvas id="mensalChart"></canvas>
+            <div class='adjuste-mensal'>
+                <h2 class="titulos-graficos">Novos usuários mensais</h2>
+                <canvas id="mensalChart"></canvas>
+            </div>
         </div>
+        
+
     </div>
 
 
