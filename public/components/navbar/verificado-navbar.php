@@ -10,7 +10,7 @@
     <div class="navega">
         <a href="./index.php">Cardápio</a>
         <a href="./reserva.php">Reserva</a>
-        <a href="./painel.php">Minhas Reservas</a>
+        <a href="./my-reservations.php">Minhas Reservas</a>
 
         
         <div class="dropdown">
