@@ -43,8 +43,7 @@
                     if(!$query){
                         header('Location: ./../../public/reserva.php?reserva=process');
                     }else{
-                        header('Location: ./../../public/reserva.php');
-                        // Mudar para o minhas reservas
+                        header('Location: ./../../public/my-reservations.php');
                     }
                 }
             }catch(_){

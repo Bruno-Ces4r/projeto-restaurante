@@ -48,6 +48,7 @@
                 id="fullName"
                 placeholder="Full Name"
                 class="campos"
+                required
               />
             </div>
             <div class="controle-input">
@@ -57,6 +58,7 @@
                 id="mail"
                 placeholder="Email"
                 class="campos"
+                required
               />
             </div>
             <div class="controle-input">
@@ -66,6 +68,7 @@
                 id="password"
                 placeholder="Senha"
                 class="campos"
+                required
               />
             </div>
             <div class="controle-input">
@@ -75,6 +78,7 @@
                 id="passwordRepeat"
                 placeholder="Repetir Senha"
                 class="campos"
+                required
               />
             </div>
             <div class="controle-input">
@@ -93,6 +97,8 @@
                 exit();
               }elseif($register == 'process'){
                 echo '<p class="error">Infelizmente ocorreu um erro de processamento!</p';
+              }elseif($register == 'empty'){
+                echo '<p class="error">Preencha todos os campos!</p>';
               }
             }
           ?>
