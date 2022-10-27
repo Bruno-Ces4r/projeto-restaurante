@@ -1,0 +1,33 @@
+.title{
+    padding: 20px 20px 10px 20px;
+    font-size: 25px;
+  }
+
+.tabela{
+    padding: 20px 20px;
+}
+
+.texto{
+    width: 470px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xburguer{
+    border-radius: 7px;
+    max-width: 200px;
+    max-height: 250px; 
+}
+
+td{
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px;
+    border-radius: 7px;
+}
+.bebidas{
+    font-size: 50px;
+    
+}

@@ -11,18 +11,28 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/log-in.css" />
-    <title>Pizza à Bessa</title>
+    <title>Pizza BG</title>
   </head>
   <body>
     <main class="content">
-      <p><a href="./index.html">Voltar</a></p>
+      <p class="voltar">
+        <a href="./index.php">
+          <img
+            src="../image/arrow-left-bold.png"
+            class="arrow-left"
+            draggable="false"
+          />
+          <a href="./index.php">Voltar</a>
+        </a>
+      </p>
       <div>
         <div class="lock-login">
           <div class="image-login">
             <img
               class="cadeado"
-              src="../image/image-login.png"
-              alt="Cadeado-Login"
+              src="../image/male-person.svg"
+              alt="Person"
+              draggable="false"
             />
           </div>
         </div>
@@ -30,13 +40,13 @@
         <div class="form-control">
           <h1 class="boas-vindas">Olá!Seja bem vindo novamente.</h1>
 
-          <form action="" class="formulario">
+          <form action="./../src/action/login.php" class="formulario" method='POST'>
             <div class="controle-input">
               <input
-                type="text"
-                name="user"
-                id="user"
-                placeholder="Usuário"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
                 class="campos"
               />
             </div>
@@ -51,17 +61,32 @@
             </div>
             <div class="controle-input">
               <p class="forgot-password">
-                <a href="./login.html">Esqueceu sua senha?</a>
+                <a href="./forgot-password.php">Esqueceu sua senha?</a>
                 <!--Redirecionar para alterar senha-->
               </p>
               <!--Esconder campo e mostrar caso o usuário erre a senha-->
               <button type="submit" class="logar">Log In</button>
-              <p class="create-account">
-                <a href="./login.html">Criar conta</a>
-                <!--Redirecionar para cadastro-->
-              </p>
+              <!-- <p class="create-account">
+                <a href="./cadastro.php">Criar conta</a>
+              </p> -->
             </div>
           </form>
+          <?php
+            if(!isset($_GET['signup'])){
+              exit();
+            }else{
+              $signupCheck = $_GET['signup'];
+
+              if($signupCheck == 'password'){
+                echo '<p class="error">Informe uma senha válida!</p>';
+                exit();
+              }elseif ($signupCheck == 'mail'){
+                echo '<p class="error">Informe um e-mail válido!</p>';
+              }elseif ($signupCheck == 'process'){
+                echo '<p class="error">Infelizmente ocorreu um erro de processamento na aplicação!</p>';
+              }
+            }
+          ?>
         </div>
       </div>
     </main>
