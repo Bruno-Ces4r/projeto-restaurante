@@ -4,6 +4,8 @@
         <a href="./painel-admin.php">Pizzaria BG</a>
     </div>
     <div class="navega">
+        <a href="./painel-admin.css">Painel Admin</a>
+        <a href="./clima.php">Clima</a>
         <div class="dropdown">
             <img src="./../image/logout.png" class="logout" alt="logout">
             <div class="dropdown-content">

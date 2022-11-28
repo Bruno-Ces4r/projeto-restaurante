@@ -40,6 +40,17 @@
     align-items: center;
 }
 
+.navega > a{
+  padding-right: 2em;
+}
+
+.navega > a:hover{
+  color: #c13b00;
+}
+
+
+
+
 .navega > p{
     padding-right: 2em;
 }
