@@ -6,6 +6,7 @@
     <div class="navega">
         <a href="./painel-admin.css">Painel Admin</a>
         <a href="./clima.php">Clima</a>
+        <a href="./produtos.php">Produtos</a>
         <div class="dropdown">
             <img src="./../image/logout.png" class="logout" alt="logout">
             <div class="dropdown-content">
