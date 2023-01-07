@@ -13,15 +13,13 @@
         $reserved_day = $reserved_data. " ".$reserved_hour;
         $reserved_by = $_SESSION['nome'];
         $dia_inclusao = date("Y-m-d H:i:s");
-        echo $dia_inclusao;
-        echo $reserved_day;
         $situation = 1;
         $mail = $_SESSION['mail'];
         $qtd_persons = $_POST['qtdPersons'];
 
         $qtd_persons_formated = intval($qtd_persons);
 
-        if(strtotime('2022-10-27 18:12:10') > strtotime($reserved_day)){
+        if(strtotime($dia_inclusao) > strtotime($reserved_day)){
             header('Location: ./../../public/reserva.php?reserva=time');
         }else{
             try{

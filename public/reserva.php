@@ -84,7 +84,7 @@
                 <label for="hora">Horário disponível:</label>
                 <!-- <input type="time" id="hora" name='hora' class="campos"  min="18:00" max="22:00" required> -->
                 <select name="hora" class="campos">
-                  <option value="18:00:00">18:00 - 22:00</option>
+                  <option value="22:00:00">18:00 - 22:00</option>
                 </select>
             </div>
               <p class="warning">

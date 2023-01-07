@@ -13,7 +13,7 @@
         
       }
 
-    $sql = 'SELECT id FROM tb_reservation where reserved_by = "'.$_SESSION['nome'].'"';
+    $sql = 'SELECT id FROM tb_reservation where reserved_by = "'.$_SESSION['personId'].'"';
     $query = $db->query( $sql );
     $registro = $query->fetchall();
 

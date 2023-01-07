@@ -31,6 +31,7 @@
                 $_SESSION['mail'] = $registros[0][2];
                 $_SESSION['role'] = $registros[0][6];
                 $_SESSION['nome'] = $registros[0][1];
+                $_SESSION['personId'] = $registros[0][0];
                 if($_SESSION['role'] === 'admin'){
                     header('Location: ./../painel-admin.php');
                 }else{
