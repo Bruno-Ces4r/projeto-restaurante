@@ -1,6 +1,5 @@
 <main>
-    <h1>Na tabela abaixo só será listado as reservas com status de confirmado, sendo do dia atual ou para dias futuros, caso cancele uma reserva, ela saira da tabela e será cancelada!</h1>
-    <p>Obs: Só é possível cancelar uma reserva com no mínimo uma hora de antecedencia</p>
+
     
         <table>
             <thead>
