@@ -9,4 +9,7 @@
         <a href="./login.php">Log In</a>
         <a href="./cadastro.php">Cadastro</a>
     </div>
+
+
+    
 </nav>

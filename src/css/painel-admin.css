@@ -70,3 +70,10 @@
         text-align: center;
     }
 }
+
+
+@media (max-width: 600px) {
+    .adjuste-mensal{
+        max-width: 320px;
+    }
+}

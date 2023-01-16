@@ -1,6 +1,9 @@
 .title{
-    padding: 20px 20px 10px 20px;
+    padding: 20px 20px 0px 20px;
     font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
 .tabela{
@@ -48,8 +51,22 @@ td{
         margin-bottom: 5px;
     }
     .texto{
-        width: 400px;
+        width: 310px;
     } 
+
+    .xburguer{
+        border-radius: 7px;
+        max-width: 300px;
+        width: 300px;
+        max-height: 220px; 
+    }
+    .title{
+        padding: 20px 20px 0px 20px;
+        font-size: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
 }
 
 @media screen and (max-width:  1180px) {

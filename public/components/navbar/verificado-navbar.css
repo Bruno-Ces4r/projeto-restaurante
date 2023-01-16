@@ -38,7 +38,7 @@
   
   
   
-  .navega{ /*Da palavra home até contatos*/
+  .navega{ 
       display: flex;
       margin-right: 10%;
       align-items: center;

@@ -7,7 +7,7 @@
     $dia_atual = date("Y-m-d H:i:s");
     $db = conecta();
 
-    $sql = 'SELECT mesa,situation,date(dia_inclusao),qtd_persons,id FROM tb_reservation where person_id = "'.$_SESSION['personId'].'" AND situation = 1 AND "'.$dia_atual.'" < reserved_day';
+    $sql = 'SELECT mesa,situation,date(reserved_day),qtd_persons,id FROM tb_reservation where person_id = "'.$_SESSION['personId'].'" AND situation = 1 AND "'.$dia_atual.'" < reserved_day';
 
     $query = $db ->query( $sql );
     if(!$query){

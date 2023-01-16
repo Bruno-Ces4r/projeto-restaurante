@@ -14,7 +14,7 @@
 
         
         <div class="dropdown">
-        <img src="./../image/logout.png" class="logout" alt="logout">
+            <img src="./../image/logout.png" class="logout" alt="logout">
             <div class="dropdown-content">
                 <a href='./../src/action/abort-session.php'>Sair</a>
             </div>
